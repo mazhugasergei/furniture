@@ -1,0 +1,125 @@
+.navbar{
+  position: relative;
+  display: inline-flex;
+
+  .menu-btn{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E5E5E5;
+    transition: background-color $btn-transition;
+
+    &::before, &::after{
+      content: '';
+      width: 2.5rem;
+      height: .125rem;
+      position: absolute;
+      background: #000;
+      transition: .25s ease-out;
+    }
+    &::before{
+      transform: translateY(-0.3rem);
+    }
+    &::after{
+      transform: translateY(0.3rem);
+    }
+
+    &.clicked{
+      &::before, &::after{
+        transition-timing-function: ease-in;
+      }
+      &::before{
+        transform: translateY(0) rotate(45deg);
+      }
+      &::after{
+        transform: translateY(0) rotate(-45deg);
+      }
+    }
+
+    &:hover{
+      background: #fff;
+      transition: 0s;
+    }
+  }
+
+  .logo{
+    width: 10rem;
+    @media (min-width: 30rem){ width: 15.625rem; }
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    background: #fff;
+
+    svg{
+      height: 1.25rem;
+      @media (min-width: 30rem){ height: 1.5625rem; }
+    }
+  }
+
+  menu{
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    width: 100%;
+    height: 0;
+    background: #E5E5E5;
+    transition: .75s cubic-bezier(.75, 0, .19, 1);
+
+    ul{
+      list-style: none;
+      display: flex;
+      height: 17.529375rem;
+      flex-flow: column;
+      justify-content: space-between;
+      align-items: start;
+      padding: 2.75rem 1.85rem;
+      @media (min-width: 30rem){ padding: 2.8rem 3.75rem; }
+      @media (min-width: 48.625rem){ padding: 2.6rem 3.75rem; }
+      li{
+        overflow: hidden;
+        position: relative;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        @media (min-width: 48.625rem){ font-size: 1.875rem; }
+        span{
+          display: block;
+          transform: translateY(-100%);
+          transition-delay: .75s;
+          &::before{
+            transition-delay: 0s;
+          }
+          &:hover{
+            &::before{
+              content: '';
+              position: absolute;
+              bottom: .2rem;
+              @media (min-width: 48.625rem){ bottom: .3rem; }
+              width: 100%;
+              height: 0.125rem;
+              @media (min-width: 48.625rem){ height: 0.1875rem; }
+              background: #000;
+              transition-delay: .2s;
+            }
+          }
+        }
+      }
+    }
+
+    &.opened{
+      height: 17.529375rem;
+      ul{
+        li{
+          span{
+            transform: translateY(0);
+            transition: .5s;
+            transition-delay: .34s;
+          }
+        }
+      }
+    }
+  }
+}

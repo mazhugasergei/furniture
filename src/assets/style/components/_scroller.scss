@@ -1,0 +1,27 @@
+.scroller{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  .btn{
+    width: 5rem;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    transition: background-color $btn-transition;
+    &.prev{
+      background: #E5E5E5;
+    }
+    &.next{
+      background: #DBDBDB;
+    }
+    &:hover{
+      background: #000;
+      transition: 0s;
+      span{
+        color: #fff;
+        transition: 0s;
+      }
+    }
+    span{ transition: color $btn-transition; }
+  }
+}
