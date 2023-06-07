@@ -94,6 +94,7 @@
         @media (min-width: 48.625rem){ font-size: 1.875rem; }
         span{
           display: block;
+          opacity: 0;
           transform: translateY(-100%);
           transition-delay: .75s;
           &::before{
@@ -121,6 +122,7 @@
       ul{
         li{
           span{
+            opacity: 1;
             transform: translateY(0);
             transition: .5s;
             transition-delay: .34s;
