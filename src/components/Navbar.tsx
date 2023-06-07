@@ -15,11 +15,11 @@ export default () => {
       <div className="logo"><Logo /></div>
       <menu className={menuClicked ? "opened": ""}>
         <ul>
-          <li onClick={() => setCurrSlide(0)}><span>Welcome</span></li>
-          <li onClick={() => setCurrSlide(1)}><span>Intro</span></li>
-          <li onClick={() => setCurrSlide(2)}><span>Features</span></li>
-          <li onClick={() => setCurrSlide(3)}><span>Benefits</span></li>
-          <li onClick={() => setCurrSlide(4)}><span>About</span></li>
+          <li onClick={() => { setCurrSlide(0); setMenuClicked(false) }}><span>Welcome</span></li>
+          <li onClick={() => { setCurrSlide(1); setMenuClicked(false) }}><span>Intro</span></li>
+          <li onClick={() => { setCurrSlide(2); setMenuClicked(false) }}><span>Features</span></li>
+          <li onClick={() => { setCurrSlide(3); setMenuClicked(false) }}><span>Benefits</span></li>
+          <li onClick={() => { setCurrSlide(4); setMenuClicked(false) }}><span>About</span></li>
         </ul>
       </menu>
     </nav>
