@@ -2,9 +2,17 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  @media (min-width: 48.625rem){
+    bottom: 50%;
+    transform: translateY(50%);
+  }
   .btn{
     width: 5rem;
     height: 5rem;
+    @media (min-width: 77.5rem){
+      width: 6.25rem;
+      height: 6.25rem;
+    }
     display: grid;
     place-items: center;
     transition: background-color $btn-transition;
@@ -22,6 +30,10 @@
         transition: 0s;
       }
     }
-    span{ transition: color $btn-transition; }
+    span{
+      font-size: 1.5625rem;
+      font-weight: 700;
+      transition: color $btn-transition;
+    }
   }
 }

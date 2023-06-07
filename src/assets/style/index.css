@@ -12,10 +12,16 @@ body {
 .navbar {
   position: relative;
   display: inline-flex;
+  --navbar-height: 5rem;
+}
+@media (min-width: 77.5rem) {
+  .navbar {
+    --navbar-height: 6.25rem;
+  }
 }
 .navbar .menu-btn {
-  width: 5rem;
-  height: 5rem;
+  width: var(--navbar-height);
+  height: var(--navbar-height);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +57,7 @@ body {
 }
 .navbar .logo {
   width: 10rem;
-  height: 5rem;
+  height: --navbar-height;
   display: grid;
   place-items: center;
   background: #fff;
@@ -61,12 +67,22 @@ body {
     width: 15.625rem;
   }
 }
+@media (min-width: 77.5rem) {
+  .navbar .logo {
+    width: 18.75rem;
+  }
+}
 .navbar .logo svg {
   height: 1.25rem;
 }
 @media (min-width: 30rem) {
   .navbar .logo svg {
     height: 1.5625rem;
+  }
+}
+@media (min-width: 77.5rem) {
+  .navbar .logo svg {
+    height: 1.875rem;
   }
 }
 .navbar menu {
@@ -151,12 +167,24 @@ body {
   right: 0;
   bottom: 0;
 }
+@media (min-width: 48.625rem) {
+  .scroller {
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+}
 .scroller .btn {
   width: 5rem;
   height: 5rem;
   display: grid;
   place-items: center;
   transition: background-color 0.45s;
+}
+@media (min-width: 77.5rem) {
+  .scroller .btn {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
 }
 .scroller .btn.prev {
   background: #E5E5E5;
@@ -173,5 +201,7 @@ body {
   transition: 0s;
 }
 .scroller .btn span {
+  font-size: 1.5625rem;
+  font-weight: 700;
   transition: color 0.45s;
 }/*# sourceMappingURL=index.css.map */

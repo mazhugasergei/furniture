@@ -2,9 +2,14 @@
   position: relative;
   display: inline-flex;
 
+  --navbar-height: 5rem;
+  @media (min-width: 77.5rem){
+    --navbar-height: 6.25rem;
+  }
+
   .menu-btn{
-    width: 5rem;
-    height: 5rem;
+    width: var(--navbar-height);
+    height: var(--navbar-height);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +52,8 @@
   .logo{
     width: 10rem;
     @media (min-width: 30rem){ width: 15.625rem; }
-    height: 5rem;
+    @media (min-width: 77.5rem){ width: 18.75rem; }
+    height: --navbar-height;
     display: grid;
     place-items: center;
     background: #fff;
@@ -55,6 +61,7 @@
     svg{
       height: 1.25rem;
       @media (min-width: 30rem){ height: 1.5625rem; }
+      @media (min-width: 77.5rem){ height: 1.875rem; }
     }
   }
 

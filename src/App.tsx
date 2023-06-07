@@ -11,8 +11,7 @@ export default () => {
   const slide_scroll_direction = useSlides((state: any) => state.slide_scroll_direction)
 
   useEffect(()=>{
-    console.log(`Slide: ${curr_slide}`)
-    console.log(`Direction: ${slide_scroll_direction}`)
+    console.log(`slide: ${curr_slide}; direction: ${slide_scroll_direction}`)
   }, [curr_slide])
   
   return (
