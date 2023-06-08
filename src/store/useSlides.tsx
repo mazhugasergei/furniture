@@ -4,7 +4,7 @@ export default create(set => ({
   // slides
   max_slides: 5,
   curr_slide: 0,
-  slide_scroll_direction: null,
+  slide_scroll_direction: "next",
 
   // set slide num on link click
   setCurrSlide: (new_num: Number) => set((state: any) => {

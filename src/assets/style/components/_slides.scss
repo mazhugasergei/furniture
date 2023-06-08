@@ -1,5 +1,9 @@
 .slides{
   .slide{
+    .cont{
+      overflow: hidden;
+    }
+
     &:nth-child(1){
 
       .left{
@@ -23,20 +27,35 @@
           position: absolute;
           top: 50%;
           left: 2.5rem;
+          @media (min-width: 30rem){ left: 3.75rem; }
+          @media (min-width: 77.5rem){ left: 12.5rem; }
           transform: translateY(-50%);
           .num{
             font-size: 1.375rem;
+            @media (min-width: 30rem){ font-size: 1.875rem; }
             line-height: 3.125rem;
           }
         }
         .headline-cont{
           position: absolute;
           top: 56%;
-          left: 2rem;
+          @media (min-width: 30rem){ top: 53.5%; }
+          @media (min-width: 48.625rem){ top: 74.5%; }
+          @media (min-width: 77.5rem){ top: 65.5%; }
+          left: 2.4rem;
+          @media (min-width: 30rem){ left: 2.3rem; }
+          @media (min-width: 48.625rem){ left: 2.85rem; }
+          @media (min-width: 77.5rem){ left: 12.25rem; }
           .headline{
-            font-size: 2rem;
+            font-size: 9.5vw;
+            @media (min-width: 30rem){ font-size: 7.5vw; }
+            @media (min-width: 48.625rem){ font-size: min(5.5vw, 3.75rem); }
+            @media (min-width: 77.5rem){ font-size: min(4.8387096774vw, 5.5625rem); }
             font-weight: 700;
-            line-height: 2rem;
+            line-height: 9.5vw;
+            @media (min-width: 30rem){ line-height: 7.5vw; }
+            @media (min-width: 48.625rem){ line-height: min(5.5vw, 3.75rem); }
+            @media (min-width: 77.5rem){ line-height: min(4.8387096774vw, 5rem); }
           }
         }
       }
@@ -52,9 +71,10 @@
           left: 50%;
           transform: translate(-50%, -50%);
           aspect-ratio: 580/759;
+          @media (min-width: 77.5rem){ aspect-ratio: unset; }
           @media (min-width: 48.625rem){ width: 25rem; }
           @media (min-width: 77.5rem){ width: 66%; }
-          @media (min-width: 77.5rem){ max-height: 66%; }
+          @media (min-width: 77.5rem){ height: 66%; }
           .pic-2{
             height: 100%;
             background: url("../images/1_2.webp");
@@ -67,6 +87,7 @@
           inset: auto 0 0 0;
           @media (min-width: 30rem){ inset: auto 0 0 auto; }
           @media (min-width: 48.625rem){ inset: auto auto 5rem 3.125rem; }
+          @media (min-width: 48.625rem){ inset: auto auto 11.3vh 3.125rem; }
           height: 10rem;
           @media (min-width: 48.625rem){ height: unset; }
           @media (min-width: 30rem){ max-width: 28rem; }
