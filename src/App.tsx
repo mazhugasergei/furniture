@@ -25,7 +25,7 @@ export default () => {
                 <div className="num">01</div>
               </div>
               <div className="headline-cont">
-                <div className="headline">Handmade Furniture</div>
+                <div className="headline">Handmade<br/>Furniture</div>
               </div>
             </div>
           </div>

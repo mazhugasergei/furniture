@@ -230,6 +230,30 @@ body {
   background-size: cover;
   background-position: center;
 }
+.slides .slide:nth-child(1) .left .num-cont, .slides .slide:nth-child(1) .left .headline-cont {
+  font-family: "Space Grotesk", sans-serif;
+  color: #fff;
+}
+.slides .slide:nth-child(1) .left .num-cont {
+  position: absolute;
+  top: 50%;
+  left: 2.5rem;
+  transform: translateY(-50%);
+}
+.slides .slide:nth-child(1) .left .num-cont .num {
+  font-size: 1.375rem;
+  line-height: 3.125rem;
+}
+.slides .slide:nth-child(1) .left .headline-cont {
+  position: absolute;
+  top: 56%;
+  left: 2rem;
+}
+.slides .slide:nth-child(1) .left .headline-cont .headline {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
 .slides .slide:nth-child(1) .right {
   position: absolute;
   inset: auto 0 0 0;
