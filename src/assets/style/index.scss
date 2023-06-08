@@ -6,9 +6,10 @@
 
 body{
   background: #555; ////
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Lexend", sans-serif;
 }
 
 @import "./ui/variables";
 @import "./components/navbar";
 @import "./components/scroller";
+@import "./components/slides";

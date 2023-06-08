@@ -17,6 +17,28 @@ export default () => {
   return (
     <>
       <Navbar />
+      <div className="slides">
+        <div className="slide">
+          <div className="left">
+            <div className="pic-1">
+              <div className="num-cont">
+                <div className="num">01</div>
+              </div>
+              <div className="headline-cont">
+                <div className="headline">Handmade Furniture</div>
+              </div>
+            </div>
+          </div>
+          <div className="right">
+            <div className="pic-2-cont">
+            <div className="pic-2" />
+            </div>
+            <div className="p-cont">
+              <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas facilisis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <Scroller />
     </>
   )

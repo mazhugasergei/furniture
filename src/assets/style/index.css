@@ -6,7 +6,7 @@
 
 body {
   background: #555;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lexend", sans-serif;
 }
 
 .navbar {
@@ -206,4 +206,136 @@ body {
   font-size: 1.5625rem;
   font-weight: 700;
   transition: color 0.45s;
+}
+
+.slides .slide:nth-child(1) .left {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+}
+@media (min-width: 48.625rem) {
+  .slides .slide:nth-child(1) .left {
+    inset: 0 60% 0 0;
+  }
+}
+@media (min-width: 77.5rem) {
+  .slides .slide:nth-child(1) .left {
+    inset: 0 50% 0 0;
+  }
+}
+.slides .slide:nth-child(1) .left .pic-1 {
+  position: absolute;
+  inset: 0;
+  background: url("../images/1_1.webp");
+  background-size: cover;
+  background-position: center;
+}
+.slides .slide:nth-child(1) .right {
+  position: absolute;
+  inset: auto 0 0 0;
+}
+@media (min-width: 48.625rem) {
+  .slides .slide:nth-child(1) .right {
+    inset: 0 0 0 40%;
+  }
+}
+@media (min-width: 77.5rem) {
+  .slides .slide:nth-child(1) .right {
+    inset: 0 0 0 calc(50% + 4rem);
+  }
+}
+.slides .slide:nth-child(1) .right .pic-2-cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 580/759;
+}
+@media (min-width: 48.625rem) {
+  .slides .slide:nth-child(1) .right .pic-2-cont {
+    width: 25rem;
+  }
+}
+@media (min-width: 77.5rem) {
+  .slides .slide:nth-child(1) .right .pic-2-cont {
+    width: 66%;
+  }
+}
+@media (min-width: 77.5rem) {
+  .slides .slide:nth-child(1) .right .pic-2-cont {
+    max-height: 66%;
+  }
+}
+.slides .slide:nth-child(1) .right .pic-2-cont .pic-2 {
+  height: 100%;
+  background: url("../images/1_2.webp");
+  background-size: cover;
+  background-position: center;
+}
+.slides .slide:nth-child(1) .right .p-cont {
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 10rem;
+}
+@media (min-width: 30rem) {
+  .slides .slide:nth-child(1) .right .p-cont {
+    inset: auto 0 0 auto;
+  }
+}
+@media (min-width: 48.625rem) {
+  .slides .slide:nth-child(1) .right .p-cont {
+    inset: auto auto 5rem 3.125rem;
+  }
+}
+@media (min-width: 48.625rem) {
+  .slides .slide:nth-child(1) .right .p-cont {
+    height: unset;
+  }
+}
+@media (min-width: 30rem) {
+  .slides .slide:nth-child(1) .right .p-cont {
+    max-width: 28rem;
+  }
+}
+@media (min-width: 48.625rem) {
+  .slides .slide:nth-child(1) .right .p-cont {
+    max-width: none;
+  }
+}
+@media (min-width: 48.625rem) {
+  .slides .slide:nth-child(1) .right .p-cont {
+    width: 66%;
+  }
+}
+@media (min-width: 77.5rem) {
+  .slides .slide:nth-child(1) .right .p-cont {
+    width: 50%;
+  }
+}
+.slides .slide:nth-child(1) .right .p-cont p {
+  height: 100%;
+  background: #fff;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  padding: 1.875rem 6.25rem 1.875rem 2.5rem;
+}
+@media (min-width: 77.5rem) {
+  .slides .slide:nth-child(1) .right .p-cont p {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 30rem) {
+  .slides .slide:nth-child(1) .right .p-cont p {
+    padding: 2.1875rem 6.25rem 2.1875rem 2.1875rem;
+  }
+}
+@media (min-width: 48.625rem) {
+  .slides .slide:nth-child(1) .right .p-cont p {
+    padding: 2.5rem;
+  }
+}
+@media (min-width: 77.5rem) {
+  .slides .slide:nth-child(1) .right .p-cont p {
+    padding: 3.125rem;
+  }
 }/*# sourceMappingURL=index.css.map */
