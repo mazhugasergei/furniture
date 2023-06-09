@@ -3,16 +3,15 @@ import { create } from "zustand"
 export default create(set => ({
   // slides
   max_slides: 5,
+  prev_slide: 0,
   curr_slide: 0,
-  slide_scroll_direction: "next",
 
   // set slide num on link click
   setCurrSlide: (new_num: Number) => set((state: any) => {
-    let new_slide_scroll_direction = state.curr_slide < new_num ? "next" : "prev"
     return {
       ...state,
-      curr_slide: new_num,
-      slide_scroll_direction: new_slide_scroll_direction
+      prev_slide: state.curr_slide,
+      curr_slide: new_num
     }
   }),
   
@@ -20,13 +19,13 @@ export default create(set => ({
   nextSlide: () => set((state: any) => {
     if(state.curr_slide === state.max_slides) return ({
       ...state,
-      curr_slide: 0,
-      slide_scroll_direction: "next"
+      prev_slide: state.curr_slide,
+      curr_slide: 0
     })
     else return ({
       ...state,
-      curr_slide: state.curr_slide + 1,
-      slide_scroll_direction: "next"
+      prev_slide: state.curr_slide,
+      curr_slide: state.curr_slide + 1
     })
   }),
   
@@ -34,13 +33,13 @@ export default create(set => ({
   prevSlide: () => set((state: any) => {
     if(state.curr_slide === 0) return ({
       ...state,
-      curr_slide: state.max_slides,
-      slide_scroll_direction: "prev"
+      prev_slide: state.curr_slide,
+      curr_slide: state.max_slides
     })
     else return ({
       ...state,
-      curr_slide: state.curr_slide - 1,
-      slide_scroll_direction: "prev"
+      prev_slide: state.curr_slide,
+      curr_slide: state.curr_slide - 1
     })
   })
 }))

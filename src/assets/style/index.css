@@ -94,7 +94,7 @@ body {
   width: 100%;
   height: 0;
   background: #E5E5E5;
-  transition: 0.75s cubic-bezier(0.75, 0, 0.19, 1);
+  transition: 0.75s cubic-bezier(0.7, 0, 0.35, 1);
 }
 .navbar menu ul {
   list-style: none;
@@ -212,6 +212,10 @@ body {
 .slides .slide .cont {
   overflow: hidden;
 }
+.slides .slide .scroll-element {
+  transform: translateY(-100%);
+  transition: 0.75s cubic-bezier(0.7, 0, 0.35, 1);
+}
 .slides .slide:nth-child(1) .left {
   position: absolute;
   z-index: -1;
@@ -234,102 +238,102 @@ body {
   background-size: cover;
   background-position: center;
 }
-.slides .slide:nth-child(1) .left .num-cont, .slides .slide:nth-child(1) .left .headline-cont {
+.slides .slide:nth-child(1) .left .pic-1 .num-cont, .slides .slide:nth-child(1) .left .pic-1 .headline-cont {
   font-family: "Space Grotesk", sans-serif;
   color: #fff;
 }
-.slides .slide:nth-child(1) .left .num-cont {
+.slides .slide:nth-child(1) .left .pic-1 .num-cont {
   position: absolute;
   top: 50%;
   left: 2.5rem;
   transform: translateY(-50%);
 }
 @media (min-width: 30rem) {
-  .slides .slide:nth-child(1) .left .num-cont {
+  .slides .slide:nth-child(1) .left .pic-1 .num-cont {
     left: 3.75rem;
   }
 }
 @media (min-width: 77.5rem) {
-  .slides .slide:nth-child(1) .left .num-cont {
+  .slides .slide:nth-child(1) .left .pic-1 .num-cont {
     left: 12.5rem;
   }
 }
-.slides .slide:nth-child(1) .left .num-cont .num {
+.slides .slide:nth-child(1) .left .pic-1 .num-cont .num {
   font-size: 1.375rem;
   line-height: 3.125rem;
 }
 @media (min-width: 30rem) {
-  .slides .slide:nth-child(1) .left .num-cont .num {
+  .slides .slide:nth-child(1) .left .pic-1 .num-cont .num {
     font-size: 1.875rem;
   }
 }
-.slides .slide:nth-child(1) .left .headline-cont {
+.slides .slide:nth-child(1) .left .pic-1 .headline-cont {
   position: absolute;
   top: 56%;
   left: 2.4rem;
 }
 @media (min-width: 30rem) {
-  .slides .slide:nth-child(1) .left .headline-cont {
+  .slides .slide:nth-child(1) .left .pic-1 .headline-cont {
     top: 53.5%;
   }
 }
 @media (min-width: 48.625rem) {
-  .slides .slide:nth-child(1) .left .headline-cont {
+  .slides .slide:nth-child(1) .left .pic-1 .headline-cont {
     top: 74.5%;
   }
 }
 @media (min-width: 77.5rem) {
-  .slides .slide:nth-child(1) .left .headline-cont {
+  .slides .slide:nth-child(1) .left .pic-1 .headline-cont {
     top: 65.5%;
   }
 }
 @media (min-width: 30rem) {
-  .slides .slide:nth-child(1) .left .headline-cont {
+  .slides .slide:nth-child(1) .left .pic-1 .headline-cont {
     left: 2.3rem;
   }
 }
 @media (min-width: 48.625rem) {
-  .slides .slide:nth-child(1) .left .headline-cont {
+  .slides .slide:nth-child(1) .left .pic-1 .headline-cont {
     left: 2.85rem;
   }
 }
 @media (min-width: 77.5rem) {
-  .slides .slide:nth-child(1) .left .headline-cont {
+  .slides .slide:nth-child(1) .left .pic-1 .headline-cont {
     left: 12.25rem;
   }
 }
-.slides .slide:nth-child(1) .left .headline-cont .headline {
+.slides .slide:nth-child(1) .left .pic-1 .headline-cont .headline {
   font-size: 9.5vw;
   font-weight: 700;
   line-height: 9.5vw;
 }
 @media (min-width: 30rem) {
-  .slides .slide:nth-child(1) .left .headline-cont .headline {
+  .slides .slide:nth-child(1) .left .pic-1 .headline-cont .headline {
     font-size: 7.5vw;
   }
 }
 @media (min-width: 48.625rem) {
-  .slides .slide:nth-child(1) .left .headline-cont .headline {
+  .slides .slide:nth-child(1) .left .pic-1 .headline-cont .headline {
     font-size: min(5.5vw, 3.75rem);
   }
 }
 @media (min-width: 77.5rem) {
-  .slides .slide:nth-child(1) .left .headline-cont .headline {
+  .slides .slide:nth-child(1) .left .pic-1 .headline-cont .headline {
     font-size: min(4.8387096774vw, 5.5625rem);
   }
 }
 @media (min-width: 30rem) {
-  .slides .slide:nth-child(1) .left .headline-cont .headline {
+  .slides .slide:nth-child(1) .left .pic-1 .headline-cont .headline {
     line-height: 7.5vw;
   }
 }
 @media (min-width: 48.625rem) {
-  .slides .slide:nth-child(1) .left .headline-cont .headline {
+  .slides .slide:nth-child(1) .left .pic-1 .headline-cont .headline {
     line-height: min(5.5vw, 3.75rem);
   }
 }
 @media (min-width: 77.5rem) {
-  .slides .slide:nth-child(1) .left .headline-cont .headline {
+  .slides .slide:nth-child(1) .left .pic-1 .headline-cont .headline {
     line-height: min(4.8387096774vw, 5rem);
   }
 }
