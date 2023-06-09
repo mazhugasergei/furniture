@@ -11,31 +11,24 @@ export default (SLIDE_NUM: number) => {
   
   useEffect(()=>{
     const NEXT_SLIDE = SLIDE_NUM + 1 > max_slides ? 0 : SLIDE_NUM + 1
-    const PREV_SLIDE = SLIDE_NUM - 1 < 0 ? max_slides : SLIDE_NUM - 1
   
     document.querySelectorAll(`.scroll-element-${SLIDE_NUM+1}`).forEach((item: any) => {
+      // behaviour for the slide u switched to
       if(curr_slide === SLIDE_NUM){
-        if(prev_slide === NEXT_SLIDE){
-          item.style.transition = "0s"
-          item.style.transform = "translateY(100%)"
-          setTimeout(() => {
-            item.style.transition = ".75s"
-            item.style.transform = "unset"
-          })
-        }
-        else if(prev_slide === PREV_SLIDE){
-          item.style.transition = "0s"
-          item.style.transform = "translateY(-100%)"
-          setTimeout(() => {
-            item.style.transition = ".75s"
-            item.style.transform = "unset"
-          })
-        }
-        else item.style.transform = "unset"
+        item.style.transitionDuration = "0s"
+        item.style.opacity = "1"
+        item.style.transform = `translateY(${prev_slide === NEXT_SLIDE ? "100%" : "-100%"})`
+        setTimeout(() => {
+          item.style.transitionDuration = ".75s"
+          item.style.transitionDelay = item.dataset.delay ? `${item.dataset.delay}s` : "0s"
+          item.style.transform = "unset"
+        })
       }
-      if(prev_slide === SLIDE_NUM){
-        if(curr_slide === NEXT_SLIDE) item.style.transform = "translateY(100%)"
-        else if(curr_slide === PREV_SLIDE) item.style.transform = "translateY(-100%)"
+      // behaviour for the slide u switched from
+      else if(prev_slide === SLIDE_NUM){
+        item.style.transitionDelay = "0s"
+        if(item.classList.contains("pic")) item.style.opacity = ".5"
+        item.style.transform = `translateY(${curr_slide === NEXT_SLIDE ? "100%" : "-101%"})`
       }
     })
   }, [curr_slide])

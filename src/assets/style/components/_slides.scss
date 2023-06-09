@@ -4,8 +4,7 @@
       overflow: hidden;
     }
     .scroll-element{
-      transform: translateY(-100%);
-      transition: .75s $transition-time-function;
+      transition-timing-function: $transition-time-function;
     }
 
     &:nth-child(1){
@@ -16,7 +15,7 @@
         inset: 0;
         @media (min-width: 48.625rem){ inset: 0 60% 0 0; }
         @media (min-width: 77.5rem){ inset: 0 50% 0 0; }
-        .pic-1{
+        .pic{
           position: absolute;
           inset: 0;
           background: url("../images/1_1.webp");
@@ -69,7 +68,7 @@
         inset: auto 0 0 0;
         @media (min-width: 48.625rem){ inset: 0 0 0 40%; }
         @media (min-width: 77.5rem){ inset: 0 0 0 calc(50% + 4rem); }
-        .pic-2-cont{
+        .pic-cont{
           position: absolute;
           top: 50%;
           left: 50%;
@@ -79,7 +78,7 @@
           @media (min-width: 48.625rem){ width: 25rem; }
           @media (min-width: 77.5rem){ width: 66%; }
           @media (min-width: 77.5rem){ height: 66%; }
-          .pic-2{
+          .pic{
             height: 100%;
             background: url("../images/1_2.webp");
             background-size: cover;
