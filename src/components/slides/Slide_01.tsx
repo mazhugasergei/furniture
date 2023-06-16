@@ -7,7 +7,7 @@ export default () => {
   return (
     <div className="slide">
       <div className="left">
-        <div className="pic scroll-element">
+        <div className="pic-cont scroll-element">
           <div className="num-cont scroll-cont">
             <div className="num scroll-element" data-delay={.1}>01</div>
           </div>
