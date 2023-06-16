@@ -12,7 +12,7 @@ export default (SLIDE_NUM: number) => {
   useEffect(()=>{
     const NEXT_SLIDE = SLIDE_NUM + 1 > max_slides ? 0 : SLIDE_NUM + 1
   
-    document.querySelectorAll(`.scroll-element-${SLIDE_NUM+1}`).forEach((item: any) => {
+    document.querySelectorAll(`.slide`)[SLIDE_NUM].querySelectorAll(`.scroll-element`).forEach((item: any) => {
       // behaviour for the slide u switched to
       if(curr_slide === SLIDE_NUM){
         item.style.transitionDuration = "0s"

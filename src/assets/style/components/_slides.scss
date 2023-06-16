@@ -1,11 +1,7 @@
 .slides{
   .slide{
-    .cont{
-      overflow: hidden;
-    }
-    .scroll-element{
-      transition-timing-function: $transition-time-function;
-    }
+    .scroll-cont{ overflow: hidden; }
+    .scroll-element{ transition-timing-function: $transition-time-function; }
 
     &:nth-child(1){
 

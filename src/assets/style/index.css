@@ -209,7 +209,7 @@ body {
   transition: color 0.45s;
 }
 
-.slides .slide .cont {
+.slides .slide .scroll-cont {
   overflow: hidden;
 }
 .slides .slide .scroll-element {
