@@ -1,9 +1,4 @@
-// handlers
-import SldiesAnimationHandler from "../../hooks/SldiesAnimationHook"
-
 export default () => {
-  SldiesAnimationHandler(0)
-
   return (
     <div className="slide">
       <div className="left">

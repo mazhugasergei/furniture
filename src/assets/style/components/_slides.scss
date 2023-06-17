@@ -166,11 +166,15 @@
           width: 40%;
           height: 100%;
         }
+        @media (min-width: 77.5rem){
+          width: 50%;
+        }
         .pic-cont{
           position: absolute;
           height: 80%;
           top: 0;
           right: 0;
+          left: 0;
           @media (min-width: 30rem){
             top: calc(2.3125rem + ((100vw - 30rem) / 24.75));
             right: calc(2.3125rem + ((100vw - 30rem) / 24.75));
@@ -180,7 +184,10 @@
             aspect-ratio: 192383/390152;
             inset: 50% 0 0 50%;
             transform: translate(-50%, -50%);
-            max-width: 60.9137055838%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60.9137055838%;
             height: unset;
             max-height: 66.7%;
           }
@@ -190,6 +197,73 @@
             background: url("../images/2_1.webp");
             background-size: cover;
             background-position: center;
+            @media (min-width: 48.625rem){
+              aspect-ratio: 192383/390152;
+              width: unset;
+            }
+            @media (min-width: 77.5rem){
+              width: 100%;
+            }
+          }
+        }
+      }
+      .right{
+        position: absolute;
+        z-index: -2;
+        bottom: 0;
+        left: 0;
+        width: 66.7%;
+        height: 50%;
+        @media (min-width: 48.625rem){
+          display: grid;
+          place-items: center;
+          left: unset;
+          right: 0;
+          width: 60%;
+          height: 100%;
+        }
+        @media (min-width: 77.5rem){
+          width: 50%;
+        }
+        .pic-cont{
+          position: absolute;
+          height: 80%;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          @media (min-width: 30rem){
+            bottom: calc(2.3125rem + ((100vw - 30rem) / 24.75));
+            left: calc(2.3125rem + ((100vw - 30rem) / 24.75));
+            right: calc(4.1875rem + ((100vw - 30rem) / 5.4));
+          }
+          @media (min-width: 48.625rem){
+            aspect-ratio: 192383/390152;
+            inset: 50% 0 0 50%;
+            transform: translate(-30%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40.7407407407%;
+            height: unset;
+            max-height: 66.7%;
+          }
+          @media (min-width: 77.5rem){
+            transform: translate(-50%, -50%);
+            width: 60.9137055838%;
+          }
+          .pic{
+            width: 100%;
+            height: 100%;
+            background: url("../images/2_2.webp");
+            background-size: cover;
+            background-position: center;
+            @media (min-width: 48.625rem){
+              aspect-ratio: 192383/390152;
+              width: unset;
+            }
+            @media (min-width: 77.5rem){
+              width: 100%;
+            }
           }
         }
       }
