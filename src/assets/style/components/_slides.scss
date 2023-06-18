@@ -8,6 +8,7 @@
 
     &:nth-child(1){
       .left{
+        overflow: hidden;
         position: absolute;
         z-index: -1;
         inset: 0;
@@ -158,7 +159,10 @@
         top: 0;
         right: 0;
         width: 66.7%;
-        height: 50%;
+        height: 62%;
+        @media (min-width: 30rem){
+          height: 50%;
+        }
         @media (min-width: 48.625rem){
           display: grid;
           place-items: center;
@@ -213,7 +217,10 @@
         bottom: 0;
         left: 0;
         width: 66.7%;
-        height: 50%;
+        height: 62%;
+        @media (min-width: 30rem){
+          height: 50%;
+        }
         @media (min-width: 48.625rem){
           display: grid;
           place-items: center;
