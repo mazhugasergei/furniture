@@ -16,7 +16,7 @@ export default () => {
         <div className="pic scroll-element" data-delay={.2} />
         </div>
         <div className="p-cont scroll-cont">
-          <p className="scroll-element" data-delay={.25}>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas facilisis.</p>
+          <p className="scroll-element" data-delay={.3}>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas facilisis.</p>
         </div>
       </div>
     </div>
