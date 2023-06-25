@@ -1,5 +1,6 @@
 .navbar{
   position: relative;
+  z-index: 999;
   display: inline-flex;
 
   --navbar-height: 5rem;

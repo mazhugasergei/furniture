@@ -10,7 +10,6 @@
       .left{
         overflow: hidden;
         position: absolute;
-        z-index: -1;
         inset: 0;
         @media (min-width: 48.625rem){
           inset: 0 60% 0 0;
@@ -155,7 +154,6 @@
     &:nth-child(2){
       .left{
         position: absolute;
-        z-index: -2;
         top: 0;
         right: 0;
         width: 66.7%;
@@ -218,7 +216,6 @@
         }
         .headline-cont{
           position: absolute;
-          z-index: -2;
           top: 50%;
           transform: translateY(-50%);
           @media (min-width: 40.375rem){
@@ -250,14 +247,15 @@
               padding: min(calc(1.875rem + ((100vw - 48.5625rem) / 17)), 2.5rem) min(calc(2.375rem + ((100vw - 48.5625rem) / 17)), 3.125rem);
             }
             @media (min-width: 77.5rem){
-              
+              font-size: 5.625rem;
+              line-height: 5rem;
+              padding: 3.125rem 3.75rem;
             }
           }
         }
       }
       .right{
         position: absolute;
-        z-index: -2;
         bottom: 0;
         left: 0;
         width: 66.7%;
