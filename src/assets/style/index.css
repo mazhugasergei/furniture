@@ -482,7 +482,7 @@ body {
 }
 @media (min-width: 40.375rem) {
   .slides .slide:nth-child(2) .center .headline-cont {
-    left: calc((100vw - 40.375rem) / 2);
+    left: calc((100vw - 40.375rem) / 1.5);
   }
 }
 @media (min-width: 48.625rem) {
@@ -503,8 +503,8 @@ body {
 }
 @media (min-width: 30rem) {
   .slides .slide:nth-child(2) .center .headline-cont .headline {
-    font-size: min(5.8333333333vw, 2.3125rem);
-    line-height: min(5.8333333333vw, 2.3125rem);
+    font-size: min(5.8333333333vw, 2.0625rem);
+    line-height: min(5.8333333333vw, 2.0625rem);
     letter-spacing: -0.0625rem;
     padding: min(5.2083333333vw, 2.0625rem) min(7.7083333333vw, 3.125rem);
   }
@@ -522,6 +522,28 @@ body {
     font-size: 5.625rem;
     line-height: 5rem;
     padding: 3.125rem 3.75rem;
+  }
+}
+.slides .slide:nth-child(2) .center .p-cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+@media (min-width: 30rem) {
+  .slides .slide:nth-child(2) .center .p-cont {
+    transform: translate(calc(2.75rem + (100vw - 30rem) / 32), calc(3.3rem + (100vw - 30rem) / 20));
+  }
+}
+.slides .slide:nth-child(2) .center .p-cont .p {
+  display: none;
+}
+@media (min-width: 30rem) {
+  .slides .slide:nth-child(2) .center .p-cont .p {
+    display: block;
+    width: 9.4rem;
+    font-family: "Lexend", sans-serif;
+    font-size: min(0.6875rem + (100vw - 30rem) / 20, 0.8125rem);
+    line-height: min(1.1875rem + (100vw - 30rem) / 26, 1.375rem);
   }
 }
 .slides .slide:nth-child(2) .right {
