@@ -333,11 +333,13 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  aspect-ratio: 580/759;
+  aspect-ratio: 304/385;
 }
 @media (min-width: 48.625rem) {
   .slides .slide:nth-child(1) .right .pic-cont {
-    width: 25rem;
+    width: 65.3%;
+    max-width: 25rem;
+    max-height: 31.6875rem;
   }
 }
 @media (min-width: 77.5rem) {
@@ -345,6 +347,8 @@ body {
     aspect-ratio: unset;
     width: 66%;
     height: 66%;
+    max-width: unset;
+    max-height: unset;
   }
 }
 .slides .slide:nth-child(1) .right .pic-cont .pic {
