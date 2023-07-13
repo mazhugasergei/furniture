@@ -538,6 +538,16 @@ body {
     transform: translate(calc(2.75rem + (100vw - 30rem) / 32), calc(3.3rem + (100vw - 30rem) / 20));
   }
 }
+@media (min-width: 48.625rem) {
+  .slides .slide:nth-child(2) .center .p-cont {
+    transform: translate(-65%, 110%);
+  }
+}
+@media (min-width: 77.5rem) {
+  .slides .slide:nth-child(2) .center .p-cont {
+    transform: translate(-45%, 140%);
+  }
+}
 .slides .slide:nth-child(2) .center .p-cont .p {
   display: none;
 }
@@ -548,6 +558,13 @@ body {
     font-family: "Lexend", sans-serif;
     font-size: min(0.6875rem + (100vw - 30rem) / 20, 0.8125rem);
     line-height: min(1.1875rem + (100vw - 30rem) / 26, 1.375rem);
+  }
+}
+@media (min-width: 48.625rem) {
+  .slides .slide:nth-child(2) .center .p-cont .p {
+    width: min(10rem + (100vw - 48.625rem) / 4, 15rem);
+    font-size: min(0.875rem + (100vw - 48.625rem) / 138.3, 1.25rem);
+    line-height: min(1.4375rem + (100vw - 48.625rem) / 79.0285714285, 1.75rem);
   }
 }
 .slides .slide:nth-child(2) .right {

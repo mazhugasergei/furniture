@@ -19,7 +19,7 @@ export default () => {
           <div className="headline scroll-element" data-delay={.3}>Impeccable<br/>Craftsmanship</div>
         </div>
         <div className="p-cont scroll-cont">
-          <div className="p scroll-element" data-delay={.2}>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas facilisis.</div>
+          <div className="p scroll-element" data-delay={.3}>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas facilisis.</div>
         </div>
       </div>
     </div>

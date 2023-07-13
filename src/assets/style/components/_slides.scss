@@ -264,6 +264,12 @@
           @media (min-width: 30rem){
             transform: translate(calc(2.75rem + ((100vw - 30rem) / 32)), calc(3.3rem + ((100vw - 30rem) / 20)));
           }
+          @media (min-width: 48.625rem){
+            transform: translate(-65%, 110%);
+          }
+          @media (min-width: 77.5rem){
+            transform: translate(-45%, 140%);
+          }
           .p{
             display: none;
             @media (min-width: 30rem){
@@ -274,7 +280,9 @@
               line-height: min(calc(1.1875rem + ((100vw - 30rem) / 26)), 1.375rem);
             }
             @media (min-width: 48.625rem){
-
+              width: min(calc(10rem + ((100vw - 48.625rem) / 4)), 15rem);
+              font-size: min(calc(0.875rem + ((100vw - 48.625rem) / 138.3)), 1.25rem);
+              line-height: min(calc(1.4375rem + ((100vw - 48.625rem) / 79.02857142852)), 1.75rem);
             }
           }
         }
